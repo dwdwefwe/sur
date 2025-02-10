@@ -731,13 +731,13 @@ function azrlib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "Close",
-			Text = "Are you sure you want to close this script??",
+			Title = "关闭",
+			Text = "你确定要关闭吗???",
 			Options = {
-				{"Confirm", function()
+				{"Yes", function()
 					ScreenGui:Destroy()
 				end},
-				{"Cancel"}
+				{"No"}
 			}
 		})
 	end
